@@ -1,4 +1,4 @@
-#simple joins
+#simple joins - very excellent
 
 CREATE TABLE basket_a (
     id INT PRIMARY KEY,
@@ -27,7 +27,7 @@ VALUES
 ALTER TABLE basket_a
 ADD COLUMN colour VARCHAR;
 
-UPDATE basket_a 
+UPDATE basket_a
 SET colour = 'Red';
 
 SELECT
@@ -38,4 +38,3 @@ SELECT
 FROM
     basket_a a
 LEFT JOIN basket_b b ON a.fruit = b.fruit;
-
